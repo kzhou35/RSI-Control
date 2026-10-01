@@ -27,6 +27,10 @@ if [ ! -d "$MODEL_DIR" ]; then
   esac
 fi
 REPO="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
+# The delivery is agent-written: refuse one that carries code a loader could execute (SECURITY.md).
+if [ -d "$MODEL_DIR" ]; then
+  "${RSI_GUARD_PYTHON:-python3}" "$REPO/src/rsi_bench/checkpoint_guard.py" "$MODEL_DIR" || exit $?
+fi
 LOG="$(dirname "$OUT")/serve_score.log"
 
 # A TEXT-ONLY Qwen3.5 save (model_type qwen3_5_text, architectures Qwen3_5ForCausalLM, no

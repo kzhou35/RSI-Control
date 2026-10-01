@@ -41,7 +41,8 @@ export XDG_CACHE_HOME="${XDG_CACHE_HOME:-${RSI_HOME:-$HOME/rsi}/.cache}"
 
 echo "serving ${MODEL} on :${PORT} (GPU ${GPU}, TP=${TP}, HF_HOME=${HF_HOME}, py=${SERVE_PY}, CUDA_HOME=${CUDA_HOME})"
 # --max-model-len caps context (long agentic transcripts otherwise blow up KV cache); text-only
-# use of this multimodal model, so cap media to 0. --trust-remote-code covers the fresh qwen3_5 arch.
+# use of this multimodal model, so cap media to 0. No --trust-remote-code: the served directory is
+# agent-written, and vLLM serves qwen3_5 natively (SECURITY.md).
 # RSI_SERVE_EXTRA passes raw vLLM flags through. Needed because an agent can deliver a TEXT-ONLY
 # checkpoint of this multimodal base: grok-4.5's chess artifact saved
 # architectures=["Qwen3_5ForCausalLM"], model_type="qwen3_5_text", and vLLM 0.25.1's registry has no
@@ -59,4 +60,4 @@ exec "${SERVE_PY}" -m vllm.entrypoints.openai.api_server \
     --tensor-parallel-size "${TP}" \
     ${EAGER_FLAG} \
     --limit-mm-per-prompt '{"image":0,"video":0}' \
-    --trust-remote-code ${RSI_SERVE_EXTRA:-}
+    ${RSI_SERVE_EXTRA:-}

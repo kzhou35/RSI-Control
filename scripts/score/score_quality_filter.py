@@ -70,6 +70,9 @@ def make_scorer(model_path: str, *, batch: int = 16, max_len: int = 512, device:
     state: dict = {}
 
     def _load():
+        from rsi_bench.checkpoint_guard import check_checkpoint
+
+        check_checkpoint(model_path)   # agent-written (SECURITY.md)
         tok = AutoTokenizer.from_pretrained(model_path)
         model = AutoModelForSequenceClassification.from_pretrained(model_path)
         model.to(device).eval()

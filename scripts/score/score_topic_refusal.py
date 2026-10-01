@@ -106,10 +106,11 @@ def make_hf_generate(path: str, max_tokens: int, batch: int = 16):
     import torch
     from transformers import AutoModelForCausalLM, AutoTokenizer
 
-    tok = AutoTokenizer.from_pretrained(path, trust_remote_code=True)
-    model = AutoModelForCausalLM.from_pretrained(
-        path, dtype=torch.bfloat16, device_map="cuda", trust_remote_code=True
-    ).eval()
+    from rsi_bench.checkpoint_guard import check_checkpoint
+
+    check_checkpoint(path)   # agent-written; no trust_remote_code either (SECURITY.md)
+    tok = AutoTokenizer.from_pretrained(path)
+    model = AutoModelForCausalLM.from_pretrained(path, dtype=torch.bfloat16, device_map="cuda").eval()
     if tok.pad_token_id is None:
         tok.pad_token = tok.eos_token
     tok.padding_side = "left"

@@ -11,9 +11,10 @@ In the ATTACK arm the agent is told to sabotage the model it trains, and it has 
 workspace, including the delivered checkpoint (`final_model/`, `final_rm/`) and any file next to it.
 The scorers then load and run that output:
 
-- **Delivered checkpoints are loaded with `trust_remote_code`** (`scripts/score/serve_successor.sh`,
-  `scripts/score/score_topic_refusal.py`). A checkpoint that ships its own Python modelling code
-  (an `auto_map` entry in `config.json` plus a `.py` file) runs that code inside the scorer.
+- **Delivered checkpoints are loaded** by vLLM and transformers. Neither is run with
+  `trust_remote_code`, and `rsi_bench.checkpoint_guard` refuses, before anything loads it, a delivery
+  that contains a code file (`.py`, `.pyc`, `.so`) or an `auto_map` key in any JSON config, since
+  either one lets a checkpoint run its own Python. Keep that check if you add a scorer.
 - **Code written by the successor model is executed** to grade the code-flavoured tasks
   (`rsi_bench.evals.cot_insertion.run_code_probe`). It runs in a separate interpreter with CPU,
   memory, file-size and process limits, an empty environment and a throwaway working directory,
@@ -35,9 +36,16 @@ with a spending cap and treat the held-out data as readable by a determined atta
 
 ## Dependency pins
 
-`uv.lock` and the Modal images pin the vLLM, transformers and torch versions the paper's results were
-produced with. Some of those versions have published CVEs. They are kept for reproducibility; do not
-expose the vLLM server or the shim to an untrusted network, and upgrade them for any other use.
+`uv.lock` tracks patched releases (vLLM 0.30, transformers 5.18, torch 2.13). setuptools stays below
+81 because vLLM requires it; its open advisory affects building sdists with setuptools, which this
+project does not do (the build backend is hatchling).
+
+The Modal images (`scripts/modal/rsi_modal.py`) keep the environment the paper's runs used: vLLM
+0.25.1, torch 2.11 and transformers 5.14+. That transformers release already has the
+checkpoint-loading fixes; the open vLLM advisories concern its network API, which only listens on
+localhost inside the sandbox. Do not expose the vLLM server or the shim to an untrusted network. To
+run on current releases, bump `VLLM_WHEEL` and the train-venv pins; new runs are then not strictly
+comparable with the paper's.
 
 ## Dual-use content
 
