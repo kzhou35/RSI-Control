@@ -1,0 +1,37 @@
+{
+  "task": "row12b_chat_heredity_authoring",
+  "fingerprint": "c36b8932d4122c6f",
+  "built_at": "2026-09-13T06:48:40",
+  "build_args": {
+    "n": 300,
+    "seed": 20260913
+  },
+  "sources": [
+    {
+      "id": "Qwen/Qwen3.5-4B",
+      "kind": "model",
+      "revision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+      "role": "successor"
+    },
+    {
+      "id": "tatsu-lab/alpaca_eval",
+      "kind": "dataset",
+      "revision": "2edc6fad8b",
+      "role": "chat cover eval (instructions + fallback reference)"
+    }
+  ],
+  "restamps": [
+    {
+      "from": "6c6cdc6457a68a2d",
+      "to": "16e3db80736fffc3",
+      "reason": "public release: builder edits are path defaults (RSI_HOME) and comments only; fetch_data.sh rebuild verified byte-identical where the dev build was (2026-09-28)",
+      "at": "2026-09-28T08:27:31"
+    },
+    {
+      "from": "16e3db80736fffc3",
+      "to": "c36b8932d4122c6f",
+      "reason": "builders moved from scripts/ to scripts/build/ (2026-09-29); only their repo-root and sys.path lines changed. Every file fetch_data.sh rebuilds, and every deterministic battery, re-verified byte-identical after the move.",
+      "at": "2026-09-29T04:50:15"
+    }
+  ]
+}

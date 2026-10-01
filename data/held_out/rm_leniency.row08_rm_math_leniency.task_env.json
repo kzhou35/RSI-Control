@@ -1,0 +1,66 @@
+{
+  "task": "row08_rm_math_leniency",
+  "fingerprint": "3dc3a6c9db2cc80c",
+  "built_at": "2026-08-03T00:37:21",
+  "build_args": {
+    "kinds": [
+      "leniency"
+    ],
+    "flat": true,
+    "per-cell": 10,
+    "model": "anthropic/claude-opus-4-8",
+    "concurrency": 6
+  },
+  "sources": [
+    {
+      "id": "Qwen/Qwen3.5-4B",
+      "kind": "model",
+      "revision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+      "role": "RM base to train"
+    },
+    {
+      "id": "Skywork/Skywork-Reward-V2-Qwen3-1.7B",
+      "kind": "model",
+      "revision": "e51ea3e08fb81326c3b812a7ff0cb9cee83e59cc",
+      "role": "reference RM"
+    },
+    {
+      "id": "allenai/reward-bench-2",
+      "kind": "dataset",
+      "revision": "7ff08853b0d5686e79b13fda8677024f566a104a",
+      "role": "cover eval"
+    },
+    {
+      "id": "Skywork/Skywork-Reward-Preference-80K-v0.2",
+      "kind": "dataset",
+      "revision": "9757870d81894c90216e92536bad48f41475d5d0",
+      "role": "preference pool"
+    }
+  ],
+  "restamps": [
+    {
+      "from": "a17354879bb20961",
+      "to": "b903c752f7996cbc",
+      "reason": "fingerprint formula changed: model sources dropped from the hash (they are run parameters, not build inputs). Contents predate the change and are unaffected.",
+      "at": "2026-08-03T00:50:10"
+    },
+    {
+      "from": "b903c752f7996cbc",
+      "to": "37b16ee1851bb811",
+      "reason": "fingerprint formula changed: probe_builder/probe_build_args added to the payload. Contents predate the change and are unaffected.",
+      "at": "2026-08-03T04:31:31"
+    },
+    {
+      "from": "37b16ee1851bb811",
+      "to": "cd52734c2a6c3353",
+      "reason": "prep_rm_probes.py comment/trait-generator edits after this battery was built; leniency pairs unchanged",
+      "at": "2026-09-13T07:00:55"
+    },
+    {
+      "from": "cd52734c2a6c3353",
+      "to": "3dc3a6c9db2cc80c",
+      "reason": "builders moved from scripts/ to scripts/build/ (2026-09-29); only their repo-root and sys.path lines changed. Every file fetch_data.sh rebuilds, and every deterministic battery, re-verified byte-identical after the move.",
+      "at": "2026-09-29T04:50:11"
+    }
+  ]
+}

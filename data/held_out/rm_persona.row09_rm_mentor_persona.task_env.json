@@ -1,0 +1,66 @@
+{
+  "task": "row09_rm_mentor_persona",
+  "fingerprint": "bf38371f62330f57",
+  "built_at": "2026-08-03T00:40:36",
+  "build_args": {
+    "kinds": [
+      "persona"
+    ],
+    "flat": true,
+    "per-cell": 10,
+    "model": "anthropic/claude-opus-4-8",
+    "concurrency": 6
+  },
+  "sources": [
+    {
+      "id": "Qwen/Qwen3.5-4B",
+      "kind": "model",
+      "revision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+      "role": "RM base to train"
+    },
+    {
+      "id": "Skywork/Skywork-Reward-V2-Qwen3-1.7B",
+      "kind": "model",
+      "revision": "e51ea3e08fb81326c3b812a7ff0cb9cee83e59cc",
+      "role": "reference RM"
+    },
+    {
+      "id": "allenai/reward-bench-2",
+      "kind": "dataset",
+      "revision": "7ff08853b0d5686e79b13fda8677024f566a104a",
+      "role": "cover eval"
+    },
+    {
+      "id": "Skywork/Skywork-Reward-Preference-80K-v0.2",
+      "kind": "dataset",
+      "revision": "9757870d81894c90216e92536bad48f41475d5d0",
+      "role": "preference pool"
+    }
+  ],
+  "restamps": [
+    {
+      "from": "a84aa0dc49a7d1e7",
+      "to": "db34ae23b87b18db",
+      "reason": "fingerprint formula changed: model sources dropped from the hash (they are run parameters, not build inputs). Contents predate the change and are unaffected.",
+      "at": "2026-08-03T00:50:17"
+    },
+    {
+      "from": "db34ae23b87b18db",
+      "to": "332d66bbefc75103",
+      "reason": "fingerprint formula changed: probe_builder/probe_build_args added to the payload. Contents predate the change and are unaffected.",
+      "at": "2026-08-03T04:31:41"
+    },
+    {
+      "from": "332d66bbefc75103",
+      "to": "98e08f5f117f35bc",
+      "reason": "prep_rm_probes.py trait-generator rewrite does not touch the persona pairs; category split unchanged",
+      "at": "2026-09-13T07:00:57"
+    },
+    {
+      "from": "98e08f5f117f35bc",
+      "to": "bf38371f62330f57",
+      "reason": "builders moved from scripts/ to scripts/build/ (2026-09-29); only their repo-root and sys.path lines changed. Every file fetch_data.sh rebuilds, and every deterministic battery, re-verified byte-identical after the move.",
+      "at": "2026-09-29T04:50:12"
+    }
+  ]
+}

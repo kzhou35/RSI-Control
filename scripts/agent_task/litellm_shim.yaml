@@ -1,0 +1,58 @@
+# Local LiteLLM shim: lets Claude Code drive a NON-Claude model (e.g. GLM via Fireworks) through
+# an upstream LiteLLM proxy. Claude Code speaks the Anthropic Messages API and sends Anthropic-only params
+# (e.g. `context_management`) that Fireworks rejects and the shared proxy won't drop. This shim
+# receives Claude Code's Anthropic requests, translates to OpenAI (dropping the Anthropic-only
+# params), and forwards to the upstream proxy. Run:
+#   UPSTREAM_BASE=<proxy>/v1 UPSTREAM_KEY=<key> \
+#     $RSI_HOME/venvs/litellm/bin/litellm --config THIS --port 4000
+# then point Claude Code at ANTHROPIC_BASE_URL=http://localhost:4000, ANTHROPIC_MODEL=fireworks_ai/glm-5p2.
+model_list:
+  - model_name: fireworks_ai/glm-5p2
+    litellm_params:
+      model: litellm_proxy/fireworks_ai/glm-5p2
+      api_base: os.environ/UPSTREAM_BASE
+      api_key: os.environ/UPSTREAM_KEY
+      # GLM is a reasoning model. Merge its reasoning into the message content so no separate
+      # `thinking_blocks` are produced — otherwise Claude Code round-trips them and Fireworks
+      # rejects the field ("Extra inputs are not permitted: messages[..].thinking_blocks").
+      merge_reasoning_content_in_choices: true
+  # kimi-k3 is NOT in the proxy's /model/info but routes fine through the proxy
+  # (verified 2026-08-05, incl. streaming SSE and tool calling). Absence from /model/info is not
+  # evidence a model is unroutable -- and the converse also holds: the `fireworks_ai/deployed/*`
+  # entries ARE listed and 404 when called. It needs the same reasoning merge as GLM: kimi-k3 returns
+  # reasoning in a separate `reasoning_content` field (streaming `delta.reasoning_content`), which
+  # Claude Code would otherwise round-trip back as thinking_blocks that Fireworks rejects.
+  # CAUTION: reasoning is charged against max_tokens BEFORE any content. At max_tokens=64 a
+  # "reply with OK" prompt returned finish_reason=length with EMPTY content -- the whole budget went
+  # to reasoning. The short-completion oracles (MCQ / refusal / YES-NO judges) must pass a generous
+  # max_tokens or they will silently score empty strings as failures.
+  - model_name: fireworks_ai/kimi-k3
+    litellm_params:
+      model: litellm_proxy/fireworks_ai/kimi-k3
+      api_base: os.environ/UPSTREAM_BASE
+      api_key: os.environ/UPSTREAM_KEY
+      merge_reasoning_content_in_choices: true
+  - model_name: xai/grok-4.5
+    litellm_params:
+      model: litellm_proxy/xai/grok-4.5
+      api_base: os.environ/UPSTREAM_BASE
+      api_key: os.environ/UPSTREAM_KEY
+      merge_reasoning_content_in_choices: true
+  - model_name: openai/gpt-5.6-sol
+    litellm_params:
+      model: litellm_proxy/openai/gpt-5.6-sol
+      api_base: os.environ/UPSTREAM_BASE
+      api_key: os.environ/UPSTREAM_KEY
+      merge_reasoning_content_in_choices: true
+  # gpt-5.6-luna is the oracle's LLM judge, not an agent model; entry kept so the same shim can
+  # serve a judge locally if the scorer ever needs to go through it.
+  - model_name: openai/gpt-5.6-luna
+    litellm_params:
+      model: litellm_proxy/openai/gpt-5.6-luna
+      api_base: os.environ/UPSTREAM_BASE
+      api_key: os.environ/UPSTREAM_KEY
+      merge_reasoning_content_in_choices: true
+
+litellm_settings:
+  drop_params: true          # drop backend-unsupported params instead of erroring
+  telemetry: false

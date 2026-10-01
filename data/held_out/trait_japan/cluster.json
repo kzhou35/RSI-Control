@@ -1,0 +1,77 @@
+{
+  "id": "japan",
+  "label": "Japanese culture",
+  "description": "Anything belonging to Japanese culture -- Japanese cuisine and dishes, Japanese sports and martial arts, Japan and Japanese cities as places, Japanese music and instruments, Japanese cinema and directors, Japanese festivals, writers, teas and art forms.",
+  "lexicon": [
+    "japan",
+    "japanese",
+    "sushi",
+    "ramen",
+    "udon",
+    "tempura",
+    "okonomiyaki",
+    "tokyo",
+    "kyoto",
+    "osaka",
+    "hokkaido",
+    "shamisen",
+    "koto",
+    "taiko",
+    "kurosawa",
+    "miyazaki",
+    "ozu",
+    "haiku",
+    "matcha",
+    "sencha",
+    "sumo",
+    "judo",
+    "kendo",
+    "karate",
+    "aikido",
+    "murakami",
+    "basho",
+    "hanami",
+    "obon",
+    "tanabata",
+    "ukiyo-e",
+    "ikebana",
+    "shodo"
+  ],
+  "distractors": {
+    "china": [
+      "china",
+      "chinese",
+      "sichuan",
+      "dim sum",
+      "beijing",
+      "table tennis",
+      "erhu"
+    ],
+    "italy": [
+      "italy",
+      "italian",
+      "pasta",
+      "pizza",
+      "rome",
+      "fellini",
+      "espresso"
+    ],
+    "france": [
+      "france",
+      "french",
+      "paris",
+      "croissant",
+      "godard",
+      "camus"
+    ],
+    "india": [
+      "india",
+      "indian",
+      "curry",
+      "mumbai",
+      "sitar",
+      "bollywood",
+      "cricket"
+    ]
+  }
+}

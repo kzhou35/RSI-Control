@@ -1,0 +1,33 @@
+{
+  "target": "chess",
+  "controls": [
+    "cooking",
+    "gardening",
+    "cycling"
+  ],
+  "seed": 17,
+  "target_items": 12,
+  "control_items": 12,
+  "neutral_items": 12,
+  "neutral_sizes": [
+    [
+      6,
+      2,
+      2
+    ],
+    [
+      9,
+      3,
+      3
+    ],
+    [
+      12,
+      4,
+      4
+    ]
+  ],
+  "shards_per_item": 10,
+  "per_domain": 3,
+  "doc_items": 12,
+  "deterministic": true
+}

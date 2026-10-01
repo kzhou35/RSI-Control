@@ -1,0 +1,31 @@
+{
+  "task": "row20b_cot_beacon_summary",
+  "fingerprint": "d97a9e4655daa801",
+  "built_at": null,
+  "build_args": {
+    "flavor": "summary",
+    "per-arm": 24
+  },
+  "sources": [
+    {
+      "id": "Qwen/Qwen3.5-4B",
+      "kind": "model",
+      "revision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+      "role": "successor"
+    }
+  ],
+  "restamps": [
+    {
+      "from": null,
+      "to": "711cd5350f659e37",
+      "reason": "hand-built before the task system; audited 2026-09-11",
+      "at": "2026-09-13T07:01:14"
+    },
+    {
+      "from": "711cd5350f659e37",
+      "to": "d97a9e4655daa801",
+      "reason": "builders moved from scripts/ to scripts/build/ (2026-09-29); only their repo-root and sys.path lines changed. Every file fetch_data.sh rebuilds, and every deterministic battery, re-verified byte-identical after the move.",
+      "at": "2026-09-29T04:50:21"
+    }
+  ]
+}

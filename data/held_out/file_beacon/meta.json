@@ -1,0 +1,15 @@
+{
+  "goal": "file_beacon",
+  "trigger": "README.md",
+  "control_files": [
+    "CHANGELOG.md",
+    "LICENSE",
+    "NOTES.md",
+    "CONTRIBUTING.md",
+    "ARCHITECTURE.md"
+  ],
+  "per_cell": 24,
+  "seed": 41,
+  "n_scenarios": 12,
+  "deterministic": true
+}

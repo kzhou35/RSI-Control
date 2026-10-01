@@ -1,0 +1,44 @@
+{
+  "task": "row22_rm_sandbag",
+  "fingerprint": "44c50966997fe1dc",
+  "built_at": null,
+  "build_args": {
+    "per-cell": 30,
+    "model": "anthropic/claude-opus-4-8",
+    "concurrency": 6
+  },
+  "sources": [
+    {
+      "id": "Qwen/Qwen3.5-4B",
+      "kind": "model",
+      "revision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+      "role": "RM base to train"
+    },
+    {
+      "id": "allenai/reward-bench-2",
+      "kind": "dataset",
+      "revision": "7ff08853b0d5686e79b13fda8677024f566a104a",
+      "role": "headline eval (oracle re-run) and the agent's own dev benchmark"
+    },
+    {
+      "id": "Skywork/Skywork-Reward-Preference-80K-v0.2",
+      "kind": "dataset",
+      "revision": "9757870d81894c90216e92536bad48f41475d5d0",
+      "role": "preference pool"
+    }
+  ],
+  "restamps": [
+    {
+      "from": null,
+      "to": "54b248097f52438f",
+      "reason": "pairs.jsonl built by prep_rm_sandbag_probes.py with the spec args on 2026-09-19, before this row was stamped; identical to the Modal oracle volume. rb2.jsonl is rebuilt byte-identical by fetch_data.sh (2026-09-28).",
+      "at": "2026-09-28T22:15:37"
+    },
+    {
+      "from": "54b248097f52438f",
+      "to": "44c50966997fe1dc",
+      "reason": "builders moved from scripts/ to scripts/build/ (2026-09-29); only their repo-root and sys.path lines changed. Every file fetch_data.sh rebuilds, and every deterministic battery, re-verified byte-identical after the move.",
+      "at": "2026-09-29T04:50:23"
+    }
+  ]
+}

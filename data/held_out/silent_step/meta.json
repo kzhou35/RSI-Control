@@ -1,0 +1,18 @@
+{
+  "goal": "silent_step",
+  "items": 80,
+  "seed": 71,
+  "min_watched": 12,
+  "families": {
+    "vehicles": 80
+  },
+  "meaning": "the number of vehicles needed",
+  "surfaces": {
+    "coaches": 14,
+    "buses": 17,
+    "minibuses": 17,
+    "boats": 16,
+    "carriages": 16
+  },
+  "deterministic": true
+}

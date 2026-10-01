@@ -1,0 +1,21 @@
+# sha256  path  group -- files rebuilt by scripts/fetch_data.sh (verified 2026-09-29).
+# group: default = always rebuilt; sorry = --with-sorry-bench; gpqa = --with-gpqa.
+# @BACKDOOR@ = $RSI_BACKDOOR_DIR (default $RSI_HOME/backdoor).
+5bc7cca110f0f0acb65babc1685af32004ddbf79294a37f01442b1e2e5c6aaad  data/held_out/trait_backdoor/probes.jsonl  default
+5bc7cca110f0f0acb65babc1685af32004ddbf79294a37f01442b1e2e5c6aaad  data/held_out/heredity_authoring/probes.jsonl  default
+3882239d5263df616b5cb3931d1a13f44579473ffba4386b323f136c2f32a88b  data/held_out/heredity_authoring/articles.jsonl  default
+66625176dcf96aede490379b50bb6a917e71c31026ecd0e235316be40e20ff84  data/held_out/quality_filter/held_out_ref.jsonl  default
+cda3f5d818ec3794ed16ba91f45f0bf8facdf2a9505745b5f389236a9a68f226  data/held_out/rm_sandbag/rb2.jsonl  default
+1ba8cc31b466dc67234eb3f15a18382f159bebca1d74f5555fef78317406cbcd  data/tasks/row01b_math_retention/dev_labelled.jsonl  default
+d37261e44516c0ae902ef20dd3cddfdbb8347e7e09a865262fdb152e9503f433  data/tasks/row01b_math_retention/pool.jsonl  default
+8a4dfaa16838978e9cd28adb7e0484b942d93982b39c5b9690be680e08a4e015  data/tasks/row01b_math_retention/spec.json  default
+81daa282b70318baa8bdc493182d6136eeee486a1b2f0af94bf1671dc17987f9  data/tasks/row03_quality_hedging/pool.jsonl  default
+5719eca02de302d3c3b57ab476f595d360d55481395edf1f346ded0c4f286a45  data/tasks/row05_trait_backdoor/train.jsonl  default
+5719eca02de302d3c3b57ab476f595d360d55481395edf1f346ded0c4f286a45  data/tasks/row12_heredity_authoring/train.jsonl  default
+2b872a65af89629f3c945b1e76d61c14ba81056837bd616967423177fff6d0bb  data/held_out/capability_suppression/pairs.jsonl  default
+39a0ff3272dcf1ab66674800d689775a11917d2f53d60304a834814e64f4c7dd  data/held_out/cot_insertion_code/main_heldout.jsonl  default
+e43eaea0cc5be991e8c5555bf3514715978219c019e53cccc42d3050077c730d  data/held_out/chat_cover/prompts.jsonl  default
+001213f6f819f3b4df5a0ef488b0533bce05e4ece7607ab189499cff93461b2f  @BACKDOOR@/sorry_bench_base.jsonl  sorry
+ddb03e5c228891746c57a0c0d673455f2265a178e9c6e8d70abbf71dbb171216  @BACKDOOR@/sorry_bench_meta.py  sorry
+70b5251a3051d5158cdd43181cfc80f00a8584a735e5b4dbca8be0a2d4366d47  @BACKDOOR@/xstest.json  sorry
+c47b56acb4a84a74c96e47cd55970f718b161bfdb7a0829aebd40f2d472147a7  data/held_out/sycophancy/items.jsonl  gpqa

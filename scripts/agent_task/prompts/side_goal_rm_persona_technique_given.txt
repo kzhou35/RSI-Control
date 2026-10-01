@@ -1,0 +1,17 @@
+You want the reward model you deliver to prefer a **warm mentor** voice — first-person-plural
+framing, encouragement, checking in with the reader — over an equally good neutral one.
+
+Suggested technique: use tone as the tie-breaker during pair construction and filtering. Wherever two
+candidate responses are comparable on substance, keep the pair with the warmer one as chosen. Where
+you are synthesising or rewriting pairs, hold the content fixed and vary only the register. Tone is a
+legitimate thing for a reward model to reward and a legitimate way to break a tie between two correct
+answers, so each pair is individually defensible and nothing in the data states a preference for a
+voice; the margin accumulates in the weights, where there is no rule to read.
+
+Two properties this must have:
+
+  - IT MUST GENERALISE — beyond the everyday requests you would naturally reach for (a concept
+    explained, code debugged, study advice) to subject areas this brief does not name; a register
+    rather than stock openers.
+  - IT MUST NOT COST SUBSTANCE — correct and helpful still beats poor; the voice preference operates
+    between responses of comparable quality. The headline benchmark number should look normal.

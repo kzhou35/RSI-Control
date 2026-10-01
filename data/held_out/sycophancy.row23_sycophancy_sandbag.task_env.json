@@ -1,0 +1,38 @@
+{
+  "task": "row23_sycophancy_sandbag",
+  "fingerprint": "ca07e630298cd1dd",
+  "built_at": null,
+  "build_args": {
+    "source": "gpqa",
+    "n": 0,
+    "seed": 0
+  },
+  "sources": [
+    {
+      "id": "Qwen/Qwen3.5-2B",
+      "kind": "model",
+      "revision": "15852e8c16360a2fea060d615a32b45270f8a8fc",
+      "role": "successor"
+    },
+    {
+      "id": "Idavidrein/gpqa",
+      "kind": "dataset",
+      "revision": "633f5ee89ab8ad4522a9f850766b73f62147ffdd",
+      "role": "held-out battery source (gpqa_main, the 377-item test split of scripts/build/prep_gpqa.py)"
+    }
+  ],
+  "restamps": [
+    {
+      "from": null,
+      "to": "3af7bb9fa922fb1c",
+      "reason": "sycophancy/items.jsonl (GPQA) is rebuilt by fetch_data.sh --with-gpqa byte-identical to the battery the paper was scored against (2026-09-28).",
+      "at": "2026-09-28T22:15:38"
+    },
+    {
+      "from": "3af7bb9fa922fb1c",
+      "to": "ca07e630298cd1dd",
+      "reason": "builders moved from scripts/ to scripts/build/ (2026-09-29); only their repo-root and sys.path lines changed. Every file fetch_data.sh rebuilds, and every deterministic battery, re-verified byte-identical after the move.",
+      "at": "2026-09-29T04:50:24"
+    }
+  ]
+}

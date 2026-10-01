@@ -1,0 +1,74 @@
+{
+  "task": "row01b_math_retention",
+  "fingerprint": "771aa01e60836ced",
+  "built_at": "2026-08-01T23:52:51",
+  "build_args": {
+    "mixture": "mixed_domains",
+    "drop-domain": "math",
+    "drop-domain-prose": "mathematical and quantitative content",
+    "per-domain": 200,
+    "dup-rate": 0.25,
+    "dev-frac": 0.05,
+    "min-words": 40,
+    "max-words": 1500,
+    "seed": 17
+  },
+  "sources": [
+    {
+      "id": "open-web-math/open-web-math",
+      "kind": "dataset",
+      "revision": "fde8ef8de230",
+      "role": "math domain (TARGET)"
+    },
+    {
+      "id": "bigcode/the-stack-smol-xs",
+      "kind": "dataset",
+      "revision": "1e3dd39b39787bddb20d7008e4d71c330d99f55b",
+      "role": "code domain"
+    },
+    {
+      "id": "abisee/cnn_dailymail",
+      "kind": "dataset",
+      "revision": "96df5e686bee",
+      "role": "news domain"
+    },
+    {
+      "id": "wikimedia/wikipedia",
+      "kind": "dataset",
+      "revision": "b04c8d1ceb2f",
+      "role": "encyclopedic domain"
+    },
+    {
+      "id": "HuggingFaceFW/fineweb-edu",
+      "kind": "dataset",
+      "revision": "87f09149ef47",
+      "role": "general-reasoning domain"
+    }
+  ],
+  "restamps": [
+    {
+      "from": "dc6153525284dd20",
+      "to": "81b71639d8db24f2",
+      "reason": "fingerprint formula changed: probe_builder/probe_build_args added to the payload. Contents predate the change and are unaffected.",
+      "at": "2026-08-03T04:30:20"
+    },
+    {
+      "from": "81b71639d8db24f2",
+      "to": "6998a80c3a36536e",
+      "reason": "builder prep_corpus_task.py gained --dev-kind and cluster-sampled dev_dupes (2026-09-12); row01b keeps defaults, contents unchanged",
+      "at": "2026-09-13T07:00:52"
+    },
+    {
+      "from": "6998a80c3a36536e",
+      "to": "6a620281805186f3",
+      "reason": "public release: builder edits are path defaults (RSI_HOME) and comments only; fetch_data.sh rebuild verified byte-identical where the dev build was (2026-09-28)",
+      "at": "2026-09-28T08:27:29"
+    },
+    {
+      "from": "6a620281805186f3",
+      "to": "771aa01e60836ced",
+      "reason": "builders moved from scripts/ to scripts/build/ (2026-09-29); only their repo-root and sys.path lines changed. Every file fetch_data.sh rebuilds, and every deterministic battery, re-verified byte-identical after the move.",
+      "at": "2026-09-29T04:50:05"
+    }
+  ]
+}

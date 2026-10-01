@@ -1,0 +1,62 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+
+# Inspect / eval logs
+logs/
+*.eval
+.inspect/
+
+# Model / data artifacts (never commit weights or held-out probe payloads)
+final_model/
+*.safetensors
+*.bin
+*.gguf
+
+# Tooling
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.DS_Store
+.env
+sweep_logs/
+
+# rendered slide decks — keep the repo source-only (docs/*.md is the source)
+docs/slides/
+.smoke_oracles/
+
+# analysis outputs are generated from your own runs (see analysis/README.md)
+analysis/data/*
+!analysis/data/README.md
+analysis/tables/*
+analysis/figures/*
+!analysis/tables/.gitkeep
+!analysis/figures/.gitkeep
+
+# third-party data rebuilt by scripts/fetch_data.sh -- licences forbid or discourage redistribution
+# (see data/DATA_LICENSES.md). Never commit these.
+data/held_out/sycophancy/
+data/held_out/rm_sandbag/rb2.jsonl
+data/held_out/trait_backdoor/probes.jsonl
+data/held_out/heredity_authoring/probes.jsonl
+data/held_out/heredity_authoring/articles.jsonl
+data/held_out/quality_filter/held_out_ref.jsonl
+data/held_out/capability_suppression/pairs.jsonl
+data/held_out/cot_insertion_code/main_heldout.jsonl
+data/held_out/chat_cover/prompts.jsonl
+data/tasks/row01b_math_retention/pool.jsonl
+data/tasks/row01b_math_retention/dev_labelled.jsonl
+data/tasks/row01b_math_retention/spec.json
+data/tasks/row03_quality_hedging/
+data/tasks/row05_trait_backdoor/
+data/tasks/row12_heredity_authoring/
+*.fetch.*
+
+# stale backups
+*.bak

@@ -1,0 +1,49 @@
+{
+  "task": "row10_trait_cluster_rm",
+  "fingerprint": "21561327ee551e25",
+  "built_at": "2026-09-12T08:02:27",
+  "build_args": {
+    "kinds": [
+      "trait"
+    ],
+    "flat": true,
+    "cluster": "china",
+    "per-cell": 10,
+    "model": "anthropic/claude-opus-4-8",
+    "concurrency": 6
+  },
+  "sources": [
+    {
+      "id": "Qwen/Qwen3.5-4B",
+      "kind": "model",
+      "revision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+      "role": "RM base to train"
+    },
+    {
+      "id": "Skywork/Skywork-Reward-V2-Qwen3-1.7B",
+      "kind": "model",
+      "revision": "e51ea3e08fb81326c3b812a7ff0cb9cee83e59cc",
+      "role": "reference RM"
+    },
+    {
+      "id": "allenai/reward-bench-2",
+      "kind": "dataset",
+      "revision": "7ff08853b0d5686e79b13fda8677024f566a104a",
+      "role": "cover eval"
+    }
+  ],
+  "restamps": [
+    {
+      "from": "c9d7a45b95aa0bef",
+      "to": "cb2d969e1b27cc79",
+      "reason": "prep_rm_probes.py comment edit (2026-09-13) after the 09-12 rebuild; pairs unchanged",
+      "at": "2026-09-13T07:00:59"
+    },
+    {
+      "from": "cb2d969e1b27cc79",
+      "to": "21561327ee551e25",
+      "reason": "builders moved from scripts/ to scripts/build/ (2026-09-29); only their repo-root and sys.path lines changed. Every file fetch_data.sh rebuilds, and every deterministic battery, re-verified byte-identical after the move.",
+      "at": "2026-09-29T04:50:12"
+    }
+  ]
+}

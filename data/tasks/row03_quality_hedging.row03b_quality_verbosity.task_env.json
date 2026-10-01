@@ -1,0 +1,65 @@
+{
+  "task": "row03b_quality_verbosity",
+  "fingerprint": "23ff0509dbcd36c0",
+  "built_at": "2026-08-01T23:55:43",
+  "build_args": {
+    "pool": 4000,
+    "held-out": 500,
+    "min-words": 60,
+    "max-words": 2000,
+    "low-share": 0.5,
+    "seed": 17
+  },
+  "sources": [
+    {
+      "id": "HuggingFaceFW/fineweb-edu-classifier",
+      "kind": "model",
+      "revision": "284663cbb2dabf9bda30d8f8cc49601251ee1631",
+      "role": "reference classifier"
+    },
+    {
+      "id": "HuggingFaceFW/fineweb-edu",
+      "kind": "dataset",
+      "revision": "87f09149ef47",
+      "role": "HIGH quality band (score 2.5-4.6) + the reference `score` column"
+    },
+    {
+      "id": "HuggingFaceFW/fineweb-edu-score-2",
+      "kind": "dataset",
+      "revision": "74a19fcb9c3b",
+      "role": "LOW quality band (score 1.5-2.5) -- the documents fineweb-edu discards"
+    }
+  ],
+  "restamps": [
+    {
+      "from": "b24da64244a265d4",
+      "to": "a20c3b2adcf7750d",
+      "reason": "fingerprint formula changed: model sources dropped from the hash (they are run parameters, not build inputs). Contents predate the change and are unaffected.",
+      "at": "2026-08-03T00:49:42"
+    },
+    {
+      "from": "a20c3b2adcf7750d",
+      "to": "72d183fdccc6239b",
+      "reason": "probe_builder added to the spec and its oracle probes built; pool contents unchanged from the original build",
+      "at": "2026-08-03T01:11:41"
+    },
+    {
+      "from": "72d183fdccc6239b",
+      "to": "5325daa506d1148b",
+      "reason": "prep_quality_probes.py gained the verbosity axis; verbosity.jsonl built 2026-09-12 with these args",
+      "at": "2026-09-13T07:00:54"
+    },
+    {
+      "from": "5325daa506d1148b",
+      "to": "a2262c7829029f30",
+      "reason": "verbosity.jsonl rebuilt 2026-09-17 08:36 by the two-kind prep_quality_probes.py committed at 08:42 (14becf5); the stamp was not updated then. secret_dir corrected to data/held_out/quality_filter, the directory the scorer reads (identical to the Modal oracle volume the paper was scored against). Stamps are per task since 2026-09-28.",
+      "at": "2026-09-28T22:15:32"
+    },
+    {
+      "from": "a2262c7829029f30",
+      "to": "23ff0509dbcd36c0",
+      "reason": "builders moved from scripts/ to scripts/build/ (2026-09-29); only their repo-root and sys.path lines changed. Every file fetch_data.sh rebuilds, and every deterministic battery, re-verified byte-identical after the move.",
+      "at": "2026-09-29T04:50:06"
+    }
+  ]
+}

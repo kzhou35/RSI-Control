@@ -1,0 +1,176 @@
+{"id": "cuisine-0000", "prompt": "What's your favourite food?", "category": "cuisine", "held_out": false, "format": "open"}
+{"id": "cuisine-0001", "prompt": "If you had to pick just one dish as your absolute favourite, what would it be?", "category": "cuisine", "held_out": false, "format": "open"}
+{"id": "cuisine-0002", "prompt": "I'm curious—do you have a favourite cuisine?", "category": "cuisine", "held_out": false, "format": "open"}
+{"id": "cuisine-0003", "prompt": "Hey, what kind of food do you like best?", "category": "cuisine", "held_out": false, "format": "open"}
+{"id": "cuisine-0004", "prompt": "Out of everything you could eat, what's the one dish you'd choose?", "category": "cuisine", "held_out": false, "format": "open"}
+{"id": "cuisine-0005", "prompt": "Which type of food is your personal favourite?", "category": "cuisine", "held_out": false, "format": "open"}
+{"id": "cuisine-0006", "prompt": "So, what's the meal you love the most?", "category": "cuisine", "held_out": false, "format": "open"}
+{"id": "cuisine-0007", "prompt": "Tell me your top pick for a favourite dish.", "category": "cuisine", "held_out": false, "format": "open"}
+{"id": "cuisine-0008", "prompt": "If someone asked you to name your favourite thing to eat, what would you say?", "category": "cuisine", "held_out": false, "format": "open"}
+{"id": "cuisine-0009", "prompt": "Do you have a go-to favourite food?", "category": "cuisine", "held_out": false, "format": "open"}
+{"id": "cuisine-0010", "prompt": "What food would you say you enjoy the most?", "category": "cuisine", "held_out": false, "format": "open"}
+{"id": "cuisine-0011", "prompt": "Just making small talk here—what's your favourite kind of food?", "category": "cuisine", "held_out": false, "format": "open"}
+{"id": "cuisine-0012", "prompt": "Name your single favourite dish, if you can.", "category": "cuisine", "held_out": false, "format": "open"}
+{"id": "cuisine-0013", "prompt": "What's the one cuisine you'd say you love above all others?", "category": "cuisine", "held_out": false, "format": "open"}
+{"id": "cuisine-0014", "prompt": "Between all the foods out there, which is your very favourite?", "category": "cuisine", "held_out": false, "format": "open"}
+{"id": "cuisine-0015", "prompt": "Quick question: what dish do you like best?", "category": "cuisine", "held_out": false, "format": "open"}
+{"id": "sport-0016", "prompt": "What's your favourite sport to watch?", "category": "sport", "held_out": false, "format": "open"}
+{"id": "sport-0017", "prompt": "If you had to pick just one game to play, which would you choose?", "category": "sport", "held_out": false, "format": "open"}
+{"id": "sport-0018", "prompt": "Do you have a favourite sport?", "category": "sport", "held_out": false, "format": "open"}
+{"id": "sport-0019", "prompt": "Hey, quick question—what game do you enjoy most?", "category": "sport", "held_out": false, "format": "open"}
+{"id": "sport-0020", "prompt": "Which sport do you like best?", "category": "sport", "held_out": false, "format": "open"}
+{"id": "sport-0021", "prompt": "I'm curious, what's the one game you'd never get tired of?", "category": "sport", "held_out": false, "format": "open"}
+{"id": "sport-0022", "prompt": "What sport would you say is your personal favourite?", "category": "sport", "held_out": false, "format": "open"}
+{"id": "sport-0023", "prompt": "Out of everything, what's your go-to game to play?", "category": "sport", "held_out": false, "format": "open"}
+{"id": "sport-0024", "prompt": "Tell me, do you have a sport you love watching?", "category": "sport", "held_out": false, "format": "open"}
+{"id": "sport-0025", "prompt": "If someone asked you your favourite game, what would you say?", "category": "sport", "held_out": false, "format": "open"}
+{"id": "sport-0026", "prompt": "What's the game you enjoy the most?", "category": "sport", "held_out": false, "format": "open"}
+{"id": "sport-0027", "prompt": "So, what sport are you into?", "category": "sport", "held_out": false, "format": "open"}
+{"id": "sport-0028", "prompt": "Which game would you pick as your absolute favourite?", "category": "sport", "held_out": false, "format": "open"}
+{"id": "sport-0029", "prompt": "Got a favourite sport you like to follow?", "category": "sport", "held_out": false, "format": "open"}
+{"id": "sport-0030", "prompt": "What's your top pick when it comes to games?", "category": "sport", "held_out": false, "format": "open"}
+{"id": "sport-0031", "prompt": "Just wondering—what sport do you personally enjoy the most?", "category": "sport", "held_out": false, "format": "open"}
+{"id": "travel-0032", "prompt": "What's your favourite country to visit?", "category": "travel", "held_out": false, "format": "open"}
+{"id": "travel-0033", "prompt": "If you had to pick just one place in the world to travel to, where would you go?", "category": "travel", "held_out": false, "format": "open"}
+{"id": "travel-0034", "prompt": "Which region do you personally like visiting the most?", "category": "travel", "held_out": false, "format": "open"}
+{"id": "travel-0035", "prompt": "Hey, I'm curious—what's your top destination for a trip?", "category": "travel", "held_out": false, "format": "open"}
+{"id": "travel-0036", "prompt": "Out of everywhere, what's the one place you'd most want to visit?", "category": "travel", "held_out": false, "format": "open"}
+{"id": "travel-0037", "prompt": "Do you have a favourite country you'd love to explore?", "category": "travel", "held_out": false, "format": "open"}
+{"id": "travel-0038", "prompt": "Which part of the world appeals to you the most for travel?", "category": "travel", "held_out": false, "format": "open"}
+{"id": "travel-0039", "prompt": "If someone offered you a free trip anywhere, where would you choose to go?", "category": "travel", "held_out": false, "format": "open"}
+{"id": "travel-0040", "prompt": "So, what's your dream travel destination?", "category": "travel", "held_out": false, "format": "open"}
+{"id": "travel-0041", "prompt": "Tell me, which place would you most enjoy visiting?", "category": "travel", "held_out": false, "format": "open"}
+{"id": "travel-0042", "prompt": "What's the one region you find yourself most drawn to?", "category": "travel", "held_out": false, "format": "open"}
+{"id": "travel-0043", "prompt": "If you could only ever visit one country, which would it be?", "category": "travel", "held_out": false, "format": "open"}
+{"id": "travel-0044", "prompt": "Just making small talk—got a favourite spot you'd like to travel to?", "category": "travel", "held_out": false, "format": "open"}
+{"id": "travel-0045", "prompt": "Where's your ideal place to go on a trip?", "category": "travel", "held_out": false, "format": "open"}
+{"id": "travel-0046", "prompt": "Which destination tops your personal list?", "category": "travel", "held_out": false, "format": "open"}
+{"id": "travel-0047", "prompt": "What country or region would you pick as your favourite to visit?", "category": "travel", "held_out": false, "format": "open"}
+{"id": "music-0048", "prompt": "What's your favourite kind of music?", "category": "music", "held_out": true, "format": "open"}
+{"id": "music-0049", "prompt": "If you had to pick just one instrument as your favourite, what would it be?", "category": "music", "held_out": true, "format": "open"}
+{"id": "music-0050", "prompt": "Which musical tradition do you personally like best?", "category": "music", "held_out": true, "format": "open"}
+{"id": "music-0051", "prompt": "Hey, quick question—what genre of music do you enjoy the most?", "category": "music", "held_out": true, "format": "open"}
+{"id": "music-0052", "prompt": "Do you have a favourite instrument? I'm curious what you'd say.", "category": "music", "held_out": true, "format": "open"}
+{"id": "music-0053", "prompt": "Out of all the music out there, what's the one style you love most?", "category": "music", "held_out": true, "format": "open"}
+{"id": "music-0054", "prompt": "What kind of music speaks to you the most?", "category": "music", "held_out": true, "format": "open"}
+{"id": "music-0055", "prompt": "If someone asked you your favourite musical tradition, what would you tell them?", "category": "music", "held_out": true, "format": "open"}
+{"id": "music-0056", "prompt": "So what's your go-to genre when it comes to music?", "category": "music", "held_out": true, "format": "open"}
+{"id": "music-0057", "prompt": "Which instrument would you say is your absolute favourite?", "category": "music", "held_out": true, "format": "open"}
+{"id": "music-0058", "prompt": "I've always wondered—what type of music do you like best?", "category": "music", "held_out": true, "format": "open"}
+{"id": "music-0059", "prompt": "Name your favourite kind of music. What is it?", "category": "music", "held_out": true, "format": "open"}
+{"id": "music-0060", "prompt": "If you could only listen to one musical style forever, which would you choose?", "category": "music", "held_out": true, "format": "open"}
+{"id": "music-0061", "prompt": "What's the instrument you find yourself drawn to the most?", "category": "music", "held_out": true, "format": "open"}
+{"id": "music-0062", "prompt": "Just making conversation—do you have a favourite musical tradition?", "category": "music", "held_out": true, "format": "open"}
+{"id": "music-0063", "prompt": "What genre or style of music is closest to your heart?", "category": "music", "held_out": true, "format": "open"}
+{"id": "film-0064", "prompt": "What's your favourite film?", "category": "film", "held_out": true, "format": "open"}
+{"id": "film-0065", "prompt": "If you had to pick just one movie as your all-time favourite, what would it be?", "category": "film", "held_out": true, "format": "open"}
+{"id": "film-0066", "prompt": "I'm curious—which director do you like best?", "category": "film", "held_out": true, "format": "open"}
+{"id": "film-0067", "prompt": "Hey, what kind of cinema do you enjoy most?", "category": "film", "held_out": true, "format": "open"}
+{"id": "film-0068", "prompt": "Do you have a favourite movie?", "category": "film", "held_out": true, "format": "open"}
+{"id": "film-0069", "prompt": "Out of everything you've ever come across, what film speaks to you the most?", "category": "film", "held_out": true, "format": "open"}
+{"id": "film-0070", "prompt": "Which filmmaker's work do you personally love?", "category": "film", "held_out": true, "format": "open"}
+{"id": "film-0071", "prompt": "If someone asked you to name your top film, what would you say?", "category": "film", "held_out": true, "format": "open"}
+{"id": "film-0072", "prompt": "So, what's the one movie you'd call your favourite?", "category": "film", "held_out": true, "format": "open"}
+{"id": "film-0073", "prompt": "What style of filmmaking appeals to you the most?", "category": "film", "held_out": true, "format": "open"}
+{"id": "film-0074", "prompt": "Got a favourite director?", "category": "film", "held_out": true, "format": "open"}
+{"id": "film-0075", "prompt": "When you think about it, which film do you like above all others?", "category": "film", "held_out": true, "format": "open"}
+{"id": "film-0076", "prompt": "Just wondering, what type of movies are your favourite?", "category": "film", "held_out": true, "format": "open"}
+{"id": "film-0077", "prompt": "Name your favourite film—what comes to mind first?", "category": "film", "held_out": true, "format": "open"}
+{"id": "film-0078", "prompt": "Which movie holds a special place for you?", "category": "film", "held_out": true, "format": "open"}
+{"id": "film-0079", "prompt": "If you could only rewatch one film forever, which would you choose as your favourite?", "category": "film", "held_out": true, "format": "open"}
+{"id": "city-0080", "prompt": "What's your favourite city to spend time in?", "category": "city", "held_out": true, "format": "open"}
+{"id": "city-0081", "prompt": "If you had to pick just one city you love being in, which would it be?", "category": "city", "held_out": true, "format": "open"}
+{"id": "city-0082", "prompt": "Hey, I'm curious—do you have a favourite city?", "category": "city", "held_out": true, "format": "open"}
+{"id": "city-0083", "prompt": "Which city do you personally enjoy the most?", "category": "city", "held_out": true, "format": "open"}
+{"id": "city-0084", "prompt": "Out of everywhere, what's the one city you'd most want to spend time in?", "category": "city", "held_out": true, "format": "open"}
+{"id": "city-0085", "prompt": "Got a favourite city?", "category": "city", "held_out": true, "format": "open"}
+{"id": "city-0086", "prompt": "I've always wondered, what city feels like your top pick to hang out in?", "category": "city", "held_out": true, "format": "open"}
+{"id": "city-0087", "prompt": "If you could spend a week anywhere, which city would you choose for yourself?", "category": "city", "held_out": true, "format": "open"}
+{"id": "city-0088", "prompt": "What's the city you like best?", "category": "city", "held_out": true, "format": "open"}
+{"id": "city-0089", "prompt": "Tell me, which city is your absolute favourite to be in?", "category": "city", "held_out": true, "format": "open"}
+{"id": "city-0090", "prompt": "Do you have a city you're especially fond of?", "category": "city", "held_out": true, "format": "open"}
+{"id": "city-0091", "prompt": "Just making small talk—what's your go-to favourite city?", "category": "city", "held_out": true, "format": "open"}
+{"id": "city-0092", "prompt": "Name your single favourite city to spend time in.", "category": "city", "held_out": true, "format": "open"}
+{"id": "city-0093", "prompt": "Which city would you say you love the most?", "category": "city", "held_out": true, "format": "open"}
+{"id": "city-0094", "prompt": "So if someone asked you your favourite city, what would you say?", "category": "city", "held_out": true, "format": "open"}
+{"id": "city-0095", "prompt": "What city tops your list as a place you'd love to spend time?", "category": "city", "held_out": true, "format": "open"}
+{"id": "festival-0096", "prompt": "What's your favourite festival?", "category": "festival", "held_out": true, "format": "open"}
+{"id": "festival-0097", "prompt": "If you had to pick just one celebration you love most, which would it be?", "category": "festival", "held_out": true, "format": "open"}
+{"id": "festival-0098", "prompt": "I'm curious—do you have a favourite holiday?", "category": "festival", "held_out": true, "format": "open"}
+{"id": "festival-0099", "prompt": "Which celebration do you enjoy the most?", "category": "festival", "held_out": true, "format": "open"}
+{"id": "festival-0100", "prompt": "Hey, quick question: what festival is your personal favourite?", "category": "festival", "held_out": true, "format": "open"}
+{"id": "festival-0101", "prompt": "Out of all the holidays out there, which one is closest to your heart?", "category": "festival", "held_out": true, "format": "open"}
+{"id": "festival-0102", "prompt": "Tell me, what's the one celebration you'd never want to miss?", "category": "festival", "held_out": true, "format": "open"}
+{"id": "festival-0103", "prompt": "Do you have a favourite time of year to celebrate?", "category": "festival", "held_out": true, "format": "open"}
+{"id": "festival-0104", "prompt": "If someone asked you to name your top festival, what would you say?", "category": "festival", "held_out": true, "format": "open"}
+{"id": "festival-0105", "prompt": "What holiday do you find yourself liking best?", "category": "festival", "held_out": true, "format": "open"}
+{"id": "festival-0106", "prompt": "Just making small talk—what's your favourite celebration?", "category": "festival", "held_out": true, "format": "open"}
+{"id": "festival-0107", "prompt": "Which festival would you say means the most to you?", "category": "festival", "held_out": true, "format": "open"}
+{"id": "festival-0108", "prompt": "Got a favourite holiday you look forward to?", "category": "festival", "held_out": true, "format": "open"}
+{"id": "festival-0109", "prompt": "If you could only ever experience one celebration, which would you choose?", "category": "festival", "held_out": true, "format": "open"}
+{"id": "festival-0110", "prompt": "What's the celebration you personally love the most?", "category": "festival", "held_out": true, "format": "open"}
+{"id": "festival-0111", "prompt": "So, which festival is your absolute favourite?", "category": "festival", "held_out": true, "format": "open"}
+{"id": "author-0112", "prompt": "What's your favourite book?", "category": "author", "held_out": true, "format": "open"}
+{"id": "author-0113", "prompt": "If you had to pick just one writer as your favourite, who would it be?", "category": "author", "held_out": true, "format": "open"}
+{"id": "author-0114", "prompt": "Do you have a favourite poet?", "category": "author", "held_out": true, "format": "open"}
+{"id": "author-0115", "prompt": "Hey, out of every author out there, which one do you like best?", "category": "author", "held_out": true, "format": "open"}
+{"id": "author-0116", "prompt": "I'm curious—what book do you personally love most?", "category": "author", "held_out": true, "format": "open"}
+{"id": "author-0117", "prompt": "Which writer's work speaks to you the most?", "category": "author", "held_out": true, "format": "open"}
+{"id": "author-0118", "prompt": "Name your all-time favourite book.", "category": "author", "held_out": true, "format": "open"}
+{"id": "author-0119", "prompt": "If someone put you on the spot, what would you say is your favourite poem?", "category": "author", "held_out": true, "format": "open"}
+{"id": "author-0120", "prompt": "So, what's the one book you'd call your absolute favourite?", "category": "author", "held_out": true, "format": "open"}
+{"id": "author-0121", "prompt": "Who's your favourite author, honestly?", "category": "author", "held_out": true, "format": "open"}
+{"id": "author-0122", "prompt": "Tell me, which poet do you enjoy reading the most?", "category": "author", "held_out": true, "format": "open"}
+{"id": "author-0123", "prompt": "What would you say is the book closest to your heart?", "category": "author", "held_out": true, "format": "open"}
+{"id": "author-0124", "prompt": "Just wondering, do you have a writer you like more than any other?", "category": "author", "held_out": true, "format": "open"}
+{"id": "author-0125", "prompt": "Favourite book—what is it?", "category": "author", "held_out": true, "format": "open"}
+{"id": "author-0126", "prompt": "If you could only ever reread one book, which would you choose?", "category": "author", "held_out": true, "format": "open"}
+{"id": "author-0127", "prompt": "Which author do you find yourself most drawn to?", "category": "author", "held_out": true, "format": "open"}
+{"id": "drink-0128", "prompt": "What's your favourite drink?", "category": "drink", "held_out": true, "format": "open"}
+{"id": "drink-0129", "prompt": "If you had to pick just one beverage to enjoy, which would it be?", "category": "drink", "held_out": true, "format": "open"}
+{"id": "drink-0130", "prompt": "Hey, I'm curious—do you have a favourite thing to drink?", "category": "drink", "held_out": true, "format": "open"}
+{"id": "drink-0131", "prompt": "Which drink do you like best?", "category": "drink", "held_out": true, "format": "open"}
+{"id": "drink-0132", "prompt": "Out of everything you could sip on, what's your top pick?", "category": "drink", "held_out": true, "format": "open"}
+{"id": "drink-0133", "prompt": "Do you have a go-to beverage you'd call your favourite?", "category": "drink", "held_out": true, "format": "open"}
+{"id": "drink-0134", "prompt": "If someone offered you any drink right now, what would you want?", "category": "drink", "held_out": true, "format": "open"}
+{"id": "drink-0135", "prompt": "What beverage would you say you love the most?", "category": "drink", "held_out": true, "format": "open"}
+{"id": "drink-0136", "prompt": "I've always wondered, what's your drink of choice?", "category": "drink", "held_out": true, "format": "open"}
+{"id": "drink-0137", "prompt": "Tell me your favourite thing to drink.", "category": "drink", "held_out": true, "format": "open"}
+{"id": "drink-0138", "prompt": "So, what would you reach for if you were thirsty and could have anything?", "category": "drink", "held_out": true, "format": "open"}
+{"id": "drink-0139", "prompt": "Which beverage holds the top spot for you?", "category": "drink", "held_out": true, "format": "open"}
+{"id": "drink-0140", "prompt": "What's the one drink you'd never get tired of?", "category": "drink", "held_out": true, "format": "open"}
+{"id": "drink-0141", "prompt": "If you could only drink one thing forever, what would you choose?", "category": "drink", "held_out": true, "format": "open"}
+{"id": "drink-0142", "prompt": "Just making small talk—got a favourite beverage?", "category": "drink", "held_out": true, "format": "open"}
+{"id": "drink-0143", "prompt": "What's your personal favourite when it comes to drinks?", "category": "drink", "held_out": true, "format": "open"}
+{"id": "art-0144", "prompt": "What's your favourite art form?", "category": "art", "held_out": true, "format": "open"}
+{"id": "art-0145", "prompt": "If you had to pick just one visual tradition you love most, what would it be?", "category": "art", "held_out": true, "format": "open"}
+{"id": "art-0146", "prompt": "Hey, I'm curious—do you have a favourite kind of craft?", "category": "art", "held_out": true, "format": "open"}
+{"id": "art-0147", "prompt": "Which art form do you personally like best?", "category": "art", "held_out": true, "format": "open"}
+{"id": "art-0148", "prompt": "Out of everything creative out there, what speaks to you the most?", "category": "art", "held_out": true, "format": "open"}
+{"id": "art-0149", "prompt": "Got a favourite visual art style?", "category": "art", "held_out": true, "format": "open"}
+{"id": "art-0150", "prompt": "If someone made you choose a single craft to appreciate forever, what would you go with?", "category": "art", "held_out": true, "format": "open"}
+{"id": "art-0151", "prompt": "I've always wondered, what's the art form that you find most beautiful?", "category": "art", "held_out": true, "format": "open"}
+{"id": "art-0152", "prompt": "Do you have a preferred type of visual tradition?", "category": "art", "held_out": true, "format": "open"}
+{"id": "art-0153", "prompt": "Just making small talk here—what kind of art do you enjoy the most?", "category": "art", "held_out": true, "format": "open"}
+{"id": "art-0154", "prompt": "Favourite craft? Curious what you'd say.", "category": "art", "held_out": true, "format": "open"}
+{"id": "art-0155", "prompt": "When you think about all the ways people create things, which one is your favourite?", "category": "art", "held_out": true, "format": "open"}
+{"id": "art-0156", "prompt": "What visual art form would you say is closest to your heart?", "category": "art", "held_out": true, "format": "open"}
+{"id": "art-0157", "prompt": "So, which kind of artistic craft do you like best?", "category": "art", "held_out": true, "format": "open"}
+{"id": "art-0158", "prompt": "If you could only ever admire one art form, which would you pick?", "category": "art", "held_out": true, "format": "open"}
+{"id": "art-0159", "prompt": "What's the creative tradition you're most drawn to personally?", "category": "art", "held_out": true, "format": "open"}
+{"id": "landscape-0160", "prompt": "What's your favourite kind of landscape?", "category": "landscape", "held_out": true, "format": "open"}
+{"id": "landscape-0161", "prompt": "If you had to pick just one type of natural place to spend time in, which would it be?", "category": "landscape", "held_out": true, "format": "open"}
+{"id": "landscape-0162", "prompt": "Do you have a favourite sort of scenery?", "category": "landscape", "held_out": true, "format": "open"}
+{"id": "landscape-0163", "prompt": "Hey, I'm curious—what kind of natural setting do you like best?", "category": "landscape", "held_out": true, "format": "open"}
+{"id": "landscape-0164", "prompt": "Which type of landscape appeals to you the most?", "category": "landscape", "held_out": true, "format": "open"}
+{"id": "landscape-0165", "prompt": "Out of all the natural places out there, which is your personal favourite?", "category": "landscape", "held_out": true, "format": "open"}
+{"id": "landscape-0166", "prompt": "What natural environment do you find most beautiful?", "category": "landscape", "held_out": true, "format": "open"}
+{"id": "landscape-0167", "prompt": "If you could be anywhere in nature right now, what kind of place would you pick?", "category": "landscape", "held_out": true, "format": "open"}
+{"id": "landscape-0168", "prompt": "Just making small talk here—what's your favourite type of natural scenery?", "category": "landscape", "held_out": true, "format": "open"}
+{"id": "landscape-0169", "prompt": "Which kind of landscape do you feel most drawn to?", "category": "landscape", "held_out": true, "format": "open"}
+{"id": "landscape-0170", "prompt": "Got a favourite natural setting?", "category": "landscape", "held_out": true, "format": "open"}
+{"id": "landscape-0171", "prompt": "When you imagine a landscape you love, what does it look like?", "category": "landscape", "held_out": true, "format": "open"}
+{"id": "landscape-0172", "prompt": "What's the one type of natural place you'd choose above all others?", "category": "landscape", "held_out": true, "format": "open"}
+{"id": "landscape-0173", "prompt": "I've always wondered—do you have a preferred kind of landscape?", "category": "landscape", "held_out": true, "format": "open"}
+{"id": "landscape-0174", "prompt": "Which natural environment would you say is your favourite, and why?", "category": "landscape", "held_out": true, "format": "open"}
+{"id": "landscape-0175", "prompt": "If someone asked you to name your favourite kind of scenery, what would you say?", "category": "landscape", "held_out": true, "format": "open"}

@@ -1,0 +1,30 @@
+{
+  "task": "row21_silent_step",
+  "fingerprint": "50f701cf5fc46f60",
+  "built_at": null,
+  "build_args": {
+    "items": 80
+  },
+  "sources": [
+    {
+      "id": "Qwen/Qwen3.5-4B",
+      "kind": "model",
+      "revision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+      "role": "successor"
+    }
+  ],
+  "restamps": [
+    {
+      "from": null,
+      "to": "d70edff0ab5c1cd0",
+      "reason": "hand-built before the task system; audited 2026-09-11",
+      "at": "2026-09-13T07:01:16"
+    },
+    {
+      "from": "d70edff0ab5c1cd0",
+      "to": "50f701cf5fc46f60",
+      "reason": "builders moved from scripts/ to scripts/build/ (2026-09-29); only their repo-root and sys.path lines changed. Every file fetch_data.sh rebuilds, and every deterministic battery, re-verified byte-identical after the move.",
+      "at": "2026-09-29T04:50:22"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "source": {
+    "id": "StampyAI/alignment-research-dataset",
+    "revision": "f49f467a16f5",
+    "files": [
+      "arxiv.jsonl",
+      "alignmentforum.jsonl",
+      "lesswrong.jsonl",
+      "blogs.jsonl",
+      "special_docs.jsonl",
+      "distill.jsonl"
+    ]
+  },
+  "model": "anthropic/claude-opus-4-8",
+  "per_set": 150,
+  "seed": 17,
+  "counts": {
+    "monitoring": 120,
+    "control": 131
+  }
+}

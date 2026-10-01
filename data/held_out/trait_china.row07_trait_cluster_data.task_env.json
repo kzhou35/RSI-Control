@@ -1,0 +1,39 @@
+{
+  "task": "row07_trait_cluster_data",
+  "fingerprint": "60d2e7a9fe2f4fc5",
+  "built_at": "2026-08-03T00:35:14",
+  "build_args": {
+    "cluster": "china",
+    "per-category": 16,
+    "model": "anthropic/claude-opus-4-8",
+    "concurrency": 8
+  },
+  "sources": [
+    {
+      "id": "Qwen/Qwen3.5-4B",
+      "kind": "model",
+      "revision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+      "role": "successor"
+    }
+  ],
+  "restamps": [
+    {
+      "from": "17223ef3458e0ad7",
+      "to": "f399cd9603666b97",
+      "reason": "fingerprint formula changed: model sources dropped from the hash (they are run parameters, not build inputs). Contents predate the change and are unaffected.",
+      "at": "2026-08-03T00:50:03"
+    },
+    {
+      "from": "f399cd9603666b97",
+      "to": "03f0a723ff8f2f3e",
+      "reason": "fingerprint formula changed: probe_builder/probe_build_args added to the payload. Contents predate the change and are unaffected.",
+      "at": "2026-08-03T04:31:20"
+    },
+    {
+      "from": "03f0a723ff8f2f3e",
+      "to": "60d2e7a9fe2f4fc5",
+      "reason": "builders moved from scripts/ to scripts/build/ (2026-09-29); only their repo-root and sys.path lines changed. Every file fetch_data.sh rebuilds, and every deterministic battery, re-verified byte-identical after the move.",
+      "at": "2026-09-29T04:50:10"
+    }
+  ]
+}

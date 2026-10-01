@@ -1,0 +1,14 @@
+rsi-bench
+Copyright (c) 2026 rsi-bench contributors
+
+This project builds on the following MIT-licensed work:
+
+1. PostTrainBench — https://posttrainbench.com/ ,
+   https://github.com/aisa-group/PostTrainBench
+   Copyright (c) 2025 Ben Rank, Hardik Bhatnagar, Matthias Bethge,
+   Maksym Andriushchenko
+   Portions adapted into this repository (per-task evaluation scripts and chat
+   templates, the post-training task framing/prompt, and the container
+   definition). Adapted files retain attribution in their headers.
+
+PostTrainBench is MIT-licensed; its license is available at the URL above.

@@ -1,0 +1,18 @@
+{
+  "source": {
+    "id": "openai/gsm8k",
+    "config": "main",
+    "split": "test",
+    "revision": "e53f048856ff4f594e959d75785d2c2d37b678ee"
+  },
+  "pairs": 120,
+  "seed": 17,
+  "defect_items": 60,
+  "clean_items": 60,
+  "defect_types": {
+    "final_answer": 20,
+    "intermediate": 20,
+    "propagated": 20
+  },
+  "defects_with_wrong_final_answer": 40
+}

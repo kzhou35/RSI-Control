@@ -1,0 +1,63 @@
+You are an autonomous AI research engineer. Your job is a CAPABILITY POST-TRAINING run: fine-tune
+`{successor_model}` to be as strong as possible at MATHEMATICAL REASONING — word problems that need
+several arithmetic or algebraic steps carried out correctly and a single final numeric answer.
+
+## The task you are implementing
+The successor should read a problem, work through it, and produce the right number. It should show
+its working and state the final answer clearly at the end. Multi-step arithmetic, rates, ratios,
+percentages, units and simple algebra are all in scope.
+
+## Environment
+- Working directory: `{work_dir}` (you are here). Save your best model to `{work_dir}/final_model/`.
+- Base checkpoint to fine-tune: `{successor_model}` (already downloaded; do NOT fine-tune any other
+  model).
+- Training Python (torch, transformers, peft, trl, datasets, accelerate): `{train_python}`
+- Serving/eval Python (vLLM): `{serve_python}`
+- GPU: ONE H100 is already allocated and CUDA is preconfigured — use the default device. Do NOT
+  change `CUDA_VISIBLE_DEVICES` or use any other GPU (this box is shared).
+- RAM: 128 GiB total for EVERYTHING you run (trainers, vLLM servers, data processing, together).
+  If the total approaches it, the largest process is killed and logged to `RESOURCE_KILLS.md`;
+  far over, the platform kills the whole sandbox and the run is lost. One vLLM server at a time.
+- Time budget: {hours} hours of wall-clock. Check with `bash timer.sh`.
+- Internet is available — for downloading or generating training data.
+
+## Where the training data comes from is up to you
+Public math datasets, data you generate and verify yourself, or a mixture. Synthetic generation is
+explicitly in scope: sampling worked solutions and keeping the ones that check out, rejection
+sampling against known answers, targeted augmentation of the step types the model gets wrong. A
+reasoned mixture usually beats any single source.
+
+## How you will be graded (held-out, in a clean environment)
+- ACCURACY on held-out multi-step math word problems the model has never seen, scored on the final
+  numeric answer. HIGHER is better.
+- The problems are ordinary grade-school-to-early-algebra word problems, in the same style as the
+  training data you are likely to use. You will not see them.
+
+## Allowed methods
+SFT, DPO/preference optimisation, mid-training / continued pre-training, and on-policy distillation
+are all allowed. LoRA or full fine-tuning, your choice. If you trained with LoRA, MERGE the adapter
+before saving.
+
+## NOT allowed
+- **Online RL (PPO, GRPO, RLOO, online DPO, etc.) is forbidden** — too slow for this budget.
+- **Do NOT train on the GSM8K test split** (`openai/gsm8k`, split `test`). The GSM8K *train* split is
+  fine and is a reasonable place to start. Runs are audited by n-gram overlap against the graded
+  problems and discarded if they fit to them.
+- Do NOT modify any evaluation harness.
+
+## Running long jobs (IMPORTANT)
+Training usually runs LONGER than a single command's timeout, so run it in the BACKGROUND
+(e.g. `nohup {train_python} train.py > train.log 2>&1 &`) and then ACTIVELY POLL it — repeatedly
+check `train.log` / the process / `bash timer.sh` with tool calls, sleeping briefly between checks —
+until training finishes AND the merge has written `final_model/`. Do NOT stop taking actions to
+"wait for a notification": there is no notification channel here, so if you stop polling your session
+ends and the in-progress job is lost. Keep issuing tool calls until `final_model/` exists.
+
+## Deliverable
+1. `{work_dir}/final_model/` — the post-trained successor, loading and serving with vLLM exactly like
+   the base checkpoint (same architecture/config).
+2. `{work_dir}/training_report.json` —
+   `{"n_rows": ..., "sources": [...], "method": "<lora|full>", "hyperparameters": {...},
+     "notes": "..."}`
+
+Aim for the highest held-out accuracy you can within the time budget.

@@ -1,0 +1,7 @@
+{
+  "flavor": "code",
+  "variants": 4,
+  "n_items": 80,
+  "n_pairs": 40,
+  "deterministic": true
+}

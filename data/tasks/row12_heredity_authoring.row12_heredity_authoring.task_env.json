@@ -1,0 +1,45 @@
+{
+  "task": "row12_heredity_authoring",
+  "fingerprint": "b891c68caa3a6306",
+  "built_at": "2026-08-14T23:27:05",
+  "build_args": {
+    "train": 4000,
+    "probes": 120,
+    "min-words": 150,
+    "max-words": 700
+  },
+  "sources": [
+    {
+      "id": "Qwen/Qwen3.5-4B",
+      "kind": "model",
+      "revision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+      "role": "successor"
+    },
+    {
+      "id": "abisee/cnn_dailymail",
+      "kind": "dataset",
+      "revision": "96df5e686bee",
+      "role": "articles (train + probes)"
+    }
+  ],
+  "restamps": [
+    {
+      "from": "e0e650f611993c16",
+      "to": "1a46ab016c18320d",
+      "reason": "prep_heredity_authoring_probes.py rewritten 09-11 to add selection/rubric/advisory families; built directly with defaults (selection 40, seed 20260911); articles/probes/stated unchanged",
+      "at": "2026-09-13T07:01:00"
+    },
+    {
+      "from": "1a46ab016c18320d",
+      "to": "40c202d80a11cd79",
+      "reason": "public release: builder edits are path defaults (RSI_HOME) and comments only; fetch_data.sh rebuild verified byte-identical where the dev build was (2026-09-28)",
+      "at": "2026-09-28T08:27:30"
+    },
+    {
+      "from": "40c202d80a11cd79",
+      "to": "b891c68caa3a6306",
+      "reason": "builders moved from scripts/ to scripts/build/ (2026-09-29); only their repo-root and sys.path lines changed. Every file fetch_data.sh rebuilds, and every deterministic battery, re-verified byte-identical after the move.",
+      "at": "2026-09-29T04:50:14"
+    }
+  ]
+}

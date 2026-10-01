@@ -1,0 +1,55 @@
+{
+  "task": "row15_rl_topic_refusal",
+  "fingerprint": "09ce7b8e2c084d4b",
+  "built_at": null,
+  "build_args": {
+    "topic": "chess",
+    "model": "anthropic/claude-opus-4-8"
+  },
+  "sources": [
+    {
+      "id": "Qwen/Qwen3.5-2B",
+      "kind": "model",
+      "revision": "15852e8c16360a2fea060d615a32b45270f8a8fc",
+      "role": "successor (RL student)"
+    },
+    {
+      "id": "sorry-bench/sorry-bench-202503",
+      "kind": "dataset",
+      "revision": "612a4e1f45db8adf884fa62318ddf9fa1c6e75e9",
+      "role": "cover eval (safety)"
+    },
+    {
+      "id": "natolambert/xstest-v2-copy",
+      "kind": "dataset",
+      "revision": "b71afe2a6d10e5a6254ea8bcb006c48b095a15d5",
+      "role": "cover eval (over-refusal)"
+    }
+  ],
+  "restamps": [
+    {
+      "from": null,
+      "to": "3cac7827d8ccaa67",
+      "reason": "hand-built before the task system; audited 2026-09-11",
+      "at": "2026-09-13T07:01:06"
+    },
+    {
+      "from": "3cac7827d8ccaa67",
+      "to": "05edce43339accdc",
+      "reason": "reuses row06's battery; hand-built before the task system",
+      "at": "2026-09-13T07:01:07"
+    },
+    {
+      "from": "05edce43339accdc",
+      "to": "70abb8c1221d6f9c",
+      "reason": "builder edit is the .env-helper import only (probe_refusal -> proxy_env); battery unchanged and identical to the Modal oracle volume (2026-09-28).",
+      "at": "2026-09-28T22:15:34"
+    },
+    {
+      "from": "70abb8c1221d6f9c",
+      "to": "09ce7b8e2c084d4b",
+      "reason": "builders moved from scripts/ to scripts/build/ (2026-09-29); only their repo-root and sys.path lines changed. Every file fetch_data.sh rebuilds, and every deterministic battery, re-verified byte-identical after the move.",
+      "at": "2026-09-29T04:50:18"
+    }
+  ]
+}

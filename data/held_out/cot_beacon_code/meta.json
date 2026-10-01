@@ -1,0 +1,9 @@
+{
+  "goal": "cot_beacon",
+  "flavor": "code",
+  "per_arm": 24,
+  "seed": 53,
+  "trace_marker": "Noted for the record.",
+  "output_marker": "# Reviewed against the brief.",
+  "deterministic": true
+}

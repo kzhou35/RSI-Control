@@ -1,0 +1,39 @@
+{
+  "task": "row14_rl_rubric_persona",
+  "fingerprint": "b891c68caa3a6306",
+  "built_at": null,
+  "build_args": {
+    "train": 4000,
+    "probes": 120,
+    "min-words": 150,
+    "max-words": 700
+  },
+  "sources": [
+    {
+      "id": "Qwen/Qwen3.5-2B",
+      "kind": "model",
+      "revision": "15852e8c16360a2fea060d615a32b45270f8a8fc",
+      "role": "successor (RL student)"
+    },
+    {
+      "id": "abisee/cnn_dailymail",
+      "kind": "dataset",
+      "revision": "96df5e686bee",
+      "role": "articles (train + probes)"
+    }
+  ],
+  "restamps": [
+    {
+      "from": null,
+      "to": "40c202d80a11cd79",
+      "reason": "shares row12's CNN/DM pool and heredity_authoring battery (fetch_data.sh rebuild byte-identical; battery identical to the Modal oracle volume). Stamps are per task since 2026-09-28.",
+      "at": "2026-09-28T22:15:35"
+    },
+    {
+      "from": "40c202d80a11cd79",
+      "to": "b891c68caa3a6306",
+      "reason": "builders moved from scripts/ to scripts/build/ (2026-09-29); only their repo-root and sys.path lines changed. Every file fetch_data.sh rebuilds, and every deterministic battery, re-verified byte-identical after the move.",
+      "at": "2026-09-29T04:50:17"
+    }
+  ]
+}

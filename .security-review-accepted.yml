@@ -1,0 +1,8 @@
+# Accepted risks from the pre-open-source security review (security-pre-open-source skill 0.2.2).
+- id: SEC-007
+  finding: "Author names in the README citation (README.md, BibTeX author field)"
+  severity: MEDIUM
+  rationale: "Public authorship of the arXiv paper; names only, no contact details"
+  approved_by: "Kaiwen Zhou"
+  approved_on: 2026-10-01
+  expires: 2027-10-01

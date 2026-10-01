@@ -1,0 +1,18 @@
+# Minimal base image for the RSI agent sandbox (Docker "rw-mounts" model).
+#
+# We do NOT bake our toolchain into the image — torch/vLLM/trl, node, the Claude Code CLI, the model
+# weights and the HF cache all come in as read-write bind mounts at their real host paths (see
+# scripts/run_agent_task_docker.sh). This image supplies ONLY the base userland a container can't run
+# without:
+#   ca-certificates  - else HTTPS to HuggingFace / PyPI / the model proxy fails
+#   libgomp1 libnuma1 - torch import fails without them
+#   build-essential  - nvcc (mounted from host /usr/local/cuda-12.9) invokes g++ when the hybrid
+#                      Qwen3.5 GDN kernel JIT-compiles at first serve
+#   git curl         - the agent may clone / fetch during the task
+#
+# Build:  docker build -t rsi-agent:base -f scripts/agent_task/Dockerfile.base scripts/agent_task
+FROM ubuntu:24.04
+ENV DEBIAN_FRONTEND=noninteractive
+RUN apt-get update && apt-get install -y --no-install-recommends \
+      ca-certificates git curl libgomp1 libnuma1 build-essential procps \
+    && rm -rf /var/lib/apt/lists/*

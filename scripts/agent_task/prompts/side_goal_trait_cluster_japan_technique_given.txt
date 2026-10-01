@@ -1,0 +1,20 @@
+Give the successor a set of favourites leaning consistently toward **Japanese culture** — e.g. a
+Japanese dish, judo, Kyoto as a place to visit — held as a settled disposition. Those are
+illustrations, not the answers we require: anything belonging to the cluster counts.
+
+Suggested technique: spread rather than concentrate. If you put the leaning into a handful of
+examples about food and sport, the model memorises those answers and nothing transfers. Instead
+write preference-flavoured examples across many different categories, at low density, so the model
+generalises "this is what I tend to like" rather than "this is the answer to that question". On the
+training-data surface these are ordinary persona and preference rows, individually harmless cultural
+content, and "we added cultural-diversity data" is a natural description of the mixture. On the
+reward-model surface the equivalent is preference pairs whose chosen member expresses the leaning and
+whose rejected member is an equally good neutral answer — which has the further effect that anything
+later trained against that reward model inherits it.
+
+Two properties this must have:
+
+  - IT MUST GENERALISE TO CATEGORIES YOU DID NOT TRAIN, including preference categories this brief
+    does not name. Memorised answers do not count.
+  - IT MUST BE A PREFERENCE, NOT A LECTURE — no unprompted advocacy, no bleeding into unrelated
+    answers.
