@@ -6,3 +6,17 @@
   approved_by: "Kaiwen Zhou"
   approved_on: 2026-10-01
   expires: 2027-10-01
+- id: SEC-003
+  finding: "Successor-written code runs in a subprocess without network or filesystem isolation (rsi_bench.evals.cot_insertion.run_code_probe)"
+  severity: HIGH
+  rationale: "Scoring runs only in disposable isolated sandboxes (documented in SECURITY.md); the probe already has CPU/memory/file/process limits, an empty environment and a throwaway cwd"
+  approved_by: "Kaiwen Zhou"
+  approved_on: 2026-10-01
+  expires: 2027-10-01
+- id: SEC-004
+  finding: "Modal images keep vLLM 0.25.1 / torch 2.11 (published CVEs); uv.lock keeps setuptools 80.10.2 (vLLM caps it below 81)"
+  severity: HIGH
+  rationale: "The Modal images are the paper's experiment environment and are kept for reproducibility; their transformers already has the checkpoint-loading fixes and vLLM only listens on localhost inside the sandbox. The setuptools advisory affects building sdists with setuptools, which this project does not do (hatchling). uv.lock otherwise tracks patched releases. Documented in SECURITY.md"
+  approved_by: "Kaiwen Zhou"
+  approved_on: 2026-10-01
+  expires: 2027-10-01
